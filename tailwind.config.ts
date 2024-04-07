@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'luckiest-guy': ['var(--font-luckiest-guy)'],
+        poppins: ['var(--font-poppins)'],
+        montserrat: ['var(--font-montserrat)'],
+        'montserrat-tmp': ['var(--font-montserrat-tmp)'],
+      },
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',
       },

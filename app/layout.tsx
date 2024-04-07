@@ -1,5 +1,11 @@
 import '@/app/ui/global.css';
-import { inter } from '@/app/ui/fonts';
+import {
+  inter,
+  montserrat,
+  luckiestGuy,
+  montserratTmp,
+  poppins,
+} from '@/app/ui/font';
 
 export default function RootLayout({
   children,
@@ -7,7 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${montserratTmp.variable} ${montserrat.variable} ${luckiestGuy.variable} ${poppins.variable}`}
+    >
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
